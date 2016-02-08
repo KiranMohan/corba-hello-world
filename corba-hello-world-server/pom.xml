@@ -12,7 +12,6 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.4.0</version>
 				<executions>
 					<execution>
 						<id>process-idl</id>
@@ -21,7 +20,7 @@
 							<goal>exec</goal>
 						</goals>
 						<configuration>
-							<executable>idlj</executable>
+							<executable>${JACORB_PATH}/bin/idlj</executable>
 							<commandlineArgs>-fall -td src/main/generated ../HelloWorld.idl</commandlineArgs>
 						</configuration> 
 					</execution>
@@ -30,7 +29,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>2.5</version>
 				<configuration>
 					<filesets>
 						 <fileset>
@@ -42,7 +40,6 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.8</version>
 				<executions>
 					<execution>
 						<id>add-source</id>
@@ -61,5 +58,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
