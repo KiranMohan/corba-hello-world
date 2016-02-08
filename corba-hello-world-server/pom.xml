@@ -20,8 +20,8 @@
 							<goal>exec</goal>
 						</goals>
 						<configuration>
-							<executable>${JACORB_PATH}/bin/idlj</executable>
-							<commandlineArgs>-fall -td src/main/generated ../HelloWorld.idl</commandlineArgs>
+							<executable>${IDL_COMPILER}</executable>
+							<commandlineArgs>-d src/main/generated ../HelloWorld.idl</commandlineArgs>
 						</configuration> 
 					</execution>
 				</executions>

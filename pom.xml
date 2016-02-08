@@ -42,4 +42,8 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<properties>
+		<IDL_COMPILER>${JACORB_PATH}/bin/idl.bat</IDL_COMPILER>	<!-- Windows-->
+		<!-- <IDL_COMPILER>${JACORB_PATH}/bin/idl</IDL_COMPILER> -->	<!-- Linux-->
+	</properties>
 </project>

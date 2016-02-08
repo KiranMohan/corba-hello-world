@@ -20,8 +20,8 @@
 							<goal>exec</goal>
 						</goals>
 						<configuration>
-							<executable>${JACORB_PATH}/bin/idlj</executable>
-							<commandlineArgs>-fclient -td src/main/generated ../HelloWorld.idl</commandlineArgs>
+							<executable>${IDL_COMPILER}</executable>
+							<commandlineArgs>-noskel -d src/main/generated ../HelloWorld.idl</commandlineArgs>
 						</configuration>
 					</execution>
 				</executions>
